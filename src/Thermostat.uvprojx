@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ProjectSchema.xsd">
+  <SchemaVersion>2.0</SchemaVersion>
+  <Header>### Keil uVision Project File ###</Header>
+  <Targets>
+    <Target>
+      <TargetName>RoomThermostat</TargetName>
+      <ToolsetNumber>0x0</ToolsetNumber>
+      <ToolsetName>MCS-51</ToolsetName>
+      <TargetOption>
+        <Device>AT89C51</Device>
+        <Vendor>Atmel</Vendor>
+        <Cpu>8051</Cpu>
+        <FlashDriverDll>UL2CM3(-S0 -C0 -P0)</FlashDriverDll>
+        <OutputDirectory>.\Objects\</OutputDirectory>
+        <OutputName>RoomThermostat</OutputName>
+        <CreateExecutable>1</CreateExecutable>
+        <CreateHexFile>1</CreateHexFile>
+        <DebugInformation>1</DebugInformation>
+      </TargetOption>
+      <Groups>
+        <Group>
+          <GroupName>Source Files</GroupName>
+          <Files>
+            <File>
+              <FileName>main.c</FileName>
+              <FileType>1</FileType>
+            </File>
+            <File>
+              <FileName>ds18b20.c</FileName>
+              <FileType>1</FileType>
+            </File>
+            <File>
+              <FileName>lcd.c</FileName>
+              <FileType>1</FileType>
+            </File>
+            <File>
+              <FileName>i2c.c</FileName>
+              <FileType>1</FileType>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>Header Files</GroupName>
+          <Files>
+            <File>
+              <FileName>ds18b20.h</FileName>
+              <FileType>5</FileType>
+            </File>
+            <File>
+              <FileName>lcd.h</FileName>
+              <FileType>5</FileType>
+            </File>
+            <File>
+              <FileName>i2c.h</FileName>
+              <FileType>5</FileType>
+            </File>
+          </Files>
+        </Group>
+      </Groups>
+    </Target>
+  </Targets>
+</Project>
